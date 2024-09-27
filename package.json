@@ -1,0 +1,20 @@
+{
+  "name": "spindle",
+  "module": "index.ts",
+  "scripts": {
+    "start": "bun src/index.ts",
+    "reset:npm": "rm -rf node_modules && bun install"
+  },
+  "type": "module",
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
