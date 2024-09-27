@@ -27,7 +27,8 @@ async function main() {
 
         console.log(chalk.hex("#FDA04A")(`Running command - ${commandFile.displayName}...`));
         await commandFile.run();
-        console.log(chalk.hex("#00FF00")(`${commandFile.displayName} complete!`));
+        console.log(chalk.hex("#00FF00")(`${commandFile.displayName} complete!\n`));
+        main();
     });
 };
 
